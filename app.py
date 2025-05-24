@@ -1,44 +1,46 @@
+import streamlit as st
+import pandas as pd
 import os
-import streamlit as st  # <--- THIS LINE IS IMPORTANT
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-from flask_login import LoginManager
-from sqlalchemy.orm import DeclarativeBase
-from werkzeug.middleware.proxy_fix import ProxyFix
-import logging
+from datetime import datetime
 
-st.title("Shark Pup Tracker")
-st.write("Welcome to the tracking app!")
+# File to store data
+DATA_FILE = "shark_pups.csv"
 
-# Configure logging
-logging.basicConfig(level=logging.DEBUG)
+st.title("🦈 Shark Pup Tracker")
+st.write("Log and review data from your shark pups.")
 
-class Base(DeclarativeBase):
-    pass
+# Input form
+with st.form("pup_form"):
+    date = st.date_input("Date", value=datetime.today())
+    pup_id = st.text_input("Pup ID")
+    weight = st.number_input("Weight (g)", min_value=0.0, step=0.1)
+    length = st.number_input("Length (cm)", min_value=0.0, step=0.1)
+    notes = st.text_area("Notes", height=100)
+    submitted = st.form_submit_button("Add Entry")
 
-# Initialize Flask app
-app = Flask(__name__)
-app.secret_key = os.environ.get("SESSION_SECRET", "shark_pup_secret_key")
-app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)  # needed for url_for to generate with https
+    if submitted:
+        new_row = {
+            "Date": date.strftime("%Y-%m-%d"),
+            "Pup ID": pup_id,
+            "Weight (g)": weight,
+            "Length (cm)": length,
+            "Notes": notes,
+        }
 
-# Database configuration
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL", "sqlite:///mydatabase.db")
-app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-app.config["SQLALCHEMY_ENGINE_OPTIONS"] = {
-    'pool_pre_ping': True,
-    "pool_recycle": 300,
-}
+        if os.path.exists(DATA_FILE):
+            df = pd.read_csv(DATA_FILE)
+            df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
+        else:
+            df = pd.DataFrame([new_row])
 
-# Initialize the database
-db = SQLAlchemy(app, model_class=Base)
+        df.to_csv(DATA_FILE, index=False)
+        st.success(f"Saved entry for Pup ID: {pup_id}")
 
-# Initialize Flask-Login - require login to access the application
-login_manager = LoginManager(app)
-login_manager.login_view = 'login'  # type: ignore
-login_manager.login_message_category = 'warning'
-login_manager.login_message = "Please log in to access the Shark Pup Logger."
+# Show current records
+if os.path.exists(DATA_FILE):
+    st.subheader("📊 All Recorded Shark Pups")
+    df = pd.read_csv(DATA_FILE)
+    st.dataframe(df)
+else:
+    st.info("No data recorded yet.")
 
-@login_manager.user_loader
-def load_user(user_id):
-    from models import SharkPupUser
-    return SharkPupUser.query.get(int(user_id))
