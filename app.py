@@ -6,6 +6,9 @@ from sqlalchemy.orm import DeclarativeBase
 from werkzeug.middleware.proxy_fix import ProxyFix
 import logging
 
+st.title("Shark Pup Tracker")
+st.write("Welcome to the tracking app!")
+
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
 
