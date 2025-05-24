@@ -1,0 +1,437 @@
+[
+  {
+    "id": 1,
+    "pup_id": 1,
+    "date": "2025-04-28",
+    "session_notes": "Good",
+    "feeding_time": "AM",
+    "food_items": [
+      {
+        "food_type": "Squid",
+        "amount": 10.0,
+        "notes": "2 x squid heads"
+      }
+    ],
+    "created_at": "2025-05-23T08:20:48.474555"
+  },
+  {
+    "id": 2,
+    "pup_id": 1,
+    "date": "2025-04-30",
+    "session_notes": "",
+    "feeding_time": "AM",
+    "food_items": [
+      {
+        "food_type": "Squid",
+        "amount": 5.0,
+        "notes": "head"
+      }
+    ],
+    "created_at": "2025-05-23T09:34:07.502453"
+  },
+  {
+    "id": 3,
+    "pup_id": 1,
+    "date": "2025-05-01",
+    "session_notes": "",
+    "feeding_time": "AM",
+    "food_items": [
+      {
+        "food_type": "Smelt",
+        "amount": 5.0,
+        "notes": "whole"
+      }
+    ],
+    "created_at": "2025-05-23T09:36:30.846670"
+  },
+  {
+    "id": 4,
+    "pup_id": 3,
+    "date": "2025-04-28",
+    "session_notes": "",
+    "feeding_time": "PM",
+    "food_items": [
+      {
+        "food_type": "Mackerel",
+        "amount": 5.0,
+        "notes": "1 x piece"
+      }
+    ],
+    "created_at": "2025-05-23T09:39:17.629491"
+  },
+  {
+    "id": 5,
+    "pup_id": 2,
+    "date": "2025-04-28",
+    "session_notes": "",
+    "feeding_time": "PM",
+    "food_items": [
+      {
+        "food_type": "Herring",
+        "amount": 5.0,
+        "notes": "1 x piece"
+      }
+    ],
+    "created_at": "2025-05-23T09:40:23.924629"
+  },
+  {
+    "id": 6,
+    "pup_id": 1,
+    "date": "2025-04-30",
+    "session_notes": "",
+    "feeding_time": "AM",
+    "food_items": [
+      {
+        "food_type": "Squid",
+        "amount": 5.0,
+        "notes": "head"
+      }
+    ],
+    "created_at": "2025-05-23T09:41:18.088402"
+  },
+  {
+    "id": 7,
+    "pup_id": 3,
+    "date": "2025-04-30",
+    "session_notes": "",
+    "feeding_time": "AM",
+    "food_items": [
+      {
+        "food_type": "Prawn",
+        "amount": 5.0,
+        "notes": "1 x piece"
+      }
+    ],
+    "created_at": "2025-05-23T09:42:08.943501"
+  },
+  {
+    "id": 8,
+    "pup_id": 2,
+    "date": "2025-05-01",
+    "session_notes": "",
+    "feeding_time": "AM",
+    "food_items": [
+      {
+        "food_type": "Prawn",
+        "amount": 5.0,
+        "notes": "1 x piece"
+      },
+      {
+        "food_type": "Smelt",
+        "amount": 7.0,
+        "notes": "whole"
+      }
+    ],
+    "created_at": "2025-05-23T09:43:19.072581"
+  },
+  {
+    "id": 9,
+    "pup_id": 3,
+    "date": "2025-05-01",
+    "session_notes": "",
+    "feeding_time": "AM",
+    "food_items": [
+      {
+        "food_type": "Smelt",
+        "amount": 20.0,
+        "notes": "whole"
+      }
+    ],
+    "created_at": "2025-05-23T09:44:34.465008"
+  },
+  {
+    "id": 10,
+    "pup_id": 1,
+    "date": "2025-05-01",
+    "session_notes": "",
+    "feeding_time": "AM",
+    "food_items": [
+      {
+        "food_type": "Smelt",
+        "amount": 7.0,
+        "notes": "whole"
+      },
+      {
+        "food_type": "Squid",
+        "amount": 10.0,
+        "notes": "heads"
+      }
+    ],
+    "created_at": "2025-05-23T09:45:31.181609"
+  },
+  {
+    "id": 11,
+    "pup_id": 1,
+    "date": "2025-05-02",
+    "session_notes": "Good",
+    "feeding_time": "AM",
+    "food_items": [
+      {
+        "food_type": "Squid",
+        "amount": 5.0,
+        "notes": "head"
+      },
+      {
+        "food_type": "Smelt",
+        "amount": 12.0,
+        "notes": "whole"
+      }
+    ],
+    "created_at": "2025-05-23T10:22:29.777964"
+  },
+  {
+    "id": 12,
+    "pup_id": 3,
+    "date": "2025-05-02",
+    "session_notes": "Good",
+    "feeding_time": "AM",
+    "food_items": [
+      {
+        "food_type": "Prawn",
+        "amount": 5.0,
+        "notes": "1 x piece"
+      },
+      {
+        "food_type": "Smelt",
+        "amount": 18.0,
+        "notes": "whole"
+      }
+    ],
+    "created_at": "2025-05-23T10:23:54.771759"
+  },
+  {
+    "id": 13,
+    "pup_id": 1,
+    "date": "2025-05-02",
+    "session_notes": "Good",
+    "feeding_time": "PM",
+    "food_items": [
+      {
+        "food_type": "Squid",
+        "amount": 5.0,
+        "notes": "head"
+      },
+      {
+        "food_type": "Smelt",
+        "amount": 12.0,
+        "notes": "whole"
+      }
+    ],
+    "created_at": "2025-05-23T10:25:06.977377"
+  },
+  {
+    "id": 14,
+    "pup_id": 3,
+    "date": "2025-05-02",
+    "session_notes": "Good",
+    "feeding_time": "PM",
+    "food_items": [
+      {
+        "food_type": "Squid",
+        "amount": 5.0,
+        "notes": "head"
+      },
+      {
+        "food_type": "Smelt",
+        "amount": 12.0,
+        "notes": "whole"
+      }
+    ],
+    "created_at": "2025-05-23T10:25:52.173186"
+  },
+  {
+    "id": 15,
+    "pup_id": 2,
+    "date": "2025-05-03",
+    "session_notes": "Good",
+    "feeding_time": "AM",
+    "food_items": [
+      {
+        "food_type": "Smelt",
+        "amount": 12.0,
+        "notes": "whole"
+      }
+    ],
+    "created_at": "2025-05-23T10:30:44.742791"
+  },
+  {
+    "id": 16,
+    "pup_id": 2,
+    "date": "2025-05-03",
+    "session_notes": "Good",
+    "feeding_time": "PM",
+    "food_items": [
+      {
+        "food_type": "Smelt",
+        "amount": 6.0,
+        "notes": "whole"
+      },
+      {
+        "food_type": "Squid",
+        "amount": 5.0,
+        "notes": "head"
+      }
+    ],
+    "created_at": "2025-05-23T10:31:37.728391"
+  },
+  {
+    "id": 17,
+    "pup_id": 1,
+    "date": "2025-05-05",
+    "session_notes": "Good",
+    "feeding_time": "AM",
+    "food_items": [
+      {
+        "food_type": "Smelt",
+        "amount": 20.0,
+        "notes": "whole"
+      }
+    ],
+    "created_at": "2025-05-23T11:56:02.228028"
+  },
+  {
+    "id": 18,
+    "pup_id": 2,
+    "date": "2025-05-05",
+    "session_notes": "",
+    "feeding_time": "AM",
+    "food_items": [
+      {
+        "food_type": "Squid",
+        "amount": 5.0,
+        "notes": "head"
+      },
+      {
+        "food_type": "Smelt",
+        "amount": 9.0,
+        "notes": "whole"
+      }
+    ],
+    "created_at": "2025-05-23T11:57:09.010232"
+  },
+  {
+    "id": 19,
+    "pup_id": 3,
+    "date": "2025-05-05",
+    "session_notes": "",
+    "feeding_time": "AM",
+    "food_items": [
+      {
+        "food_type": "Smelt",
+        "amount": 7.0,
+        "notes": "whole"
+      }
+    ],
+    "created_at": "2025-05-23T11:57:34.034123"
+  },
+  {
+    "id": 20,
+    "pup_id": 1,
+    "date": "2025-05-05",
+    "session_notes": "",
+    "feeding_time": "PM",
+    "food_items": [
+      {
+        "food_type": "Smelt",
+        "amount": 7.0,
+        "notes": "whole"
+      }
+    ],
+    "created_at": "2025-05-23T11:58:21.752579"
+  },
+  {
+    "id": 21,
+    "pup_id": 2,
+    "date": "2025-05-05",
+    "session_notes": "",
+    "feeding_time": "PM",
+    "food_items": [
+      {
+        "food_type": "Squid",
+        "amount": 5.0,
+        "notes": "head"
+      },
+      {
+        "food_type": "Smelt",
+        "amount": 21.0,
+        "notes": ""
+      }
+    ],
+    "created_at": "2025-05-23T11:59:33.091106"
+  },
+  {
+    "id": 22,
+    "pup_id": 2,
+    "date": "2025-05-06",
+    "session_notes": "",
+    "feeding_time": "AM",
+    "food_items": [
+      {
+        "food_type": "Smelt",
+        "amount": 20.0,
+        "notes": ""
+      }
+    ],
+    "created_at": "2025-05-23T12:01:26.383753"
+  },
+  {
+    "id": 23,
+    "pup_id": 3,
+    "date": "2025-05-05",
+    "session_notes": "",
+    "feeding_time": "AM",
+    "food_items": [
+      {
+        "food_type": "Smelt",
+        "amount": 13.0,
+        "notes": ""
+      }
+    ],
+    "created_at": "2025-05-23T12:01:51.906157"
+  },
+  {
+    "id": 24,
+    "pup_id": 1,
+    "date": "2025-05-06",
+    "session_notes": "",
+    "feeding_time": "PM",
+    "food_items": [
+      {
+        "food_type": "Smelt",
+        "amount": 26.0,
+        "notes": "whole"
+      }
+    ],
+    "created_at": "2025-05-23T12:07:08.382089"
+  },
+  {
+    "id": 25,
+    "pup_id": 2,
+    "date": "2025-05-06",
+    "session_notes": "",
+    "feeding_time": "PM",
+    "food_items": [
+      {
+        "food_type": "Smelt",
+        "amount": 33.0,
+        "notes": "whole"
+      }
+    ],
+    "created_at": "2025-05-23T12:07:38.931777"
+  },
+  {
+    "id": 26,
+    "pup_id": 3,
+    "date": "2025-05-06",
+    "session_notes": "",
+    "feeding_time": "PM",
+    "food_items": [
+      {
+        "food_type": "Smelt",
+        "amount": 13.0,
+        "notes": "whole"
+      }
+    ],
+    "created_at": "2025-05-23T12:08:04.837721"
+  }
+]

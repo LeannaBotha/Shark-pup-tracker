@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "pup_id": 1,
+    "date": "2025-05-23",
+    "training_type": "Target Training",
+    "duration": 30,
+    "progress": "In Progress",
+    "notes": "",
+    "created_at": "2025-05-23T08:46:39.720431"
+  },
+  {
+    "id": 2,
+    "pup_id": 1,
+    "date": "2025-05-23",
+    "training_type": "Target Training",
+    "duration": 30,
+    "progress": "In Progress",
+    "notes": "",
+    "created_at": "2025-05-23T08:52:36.870101"
+  }
+]
